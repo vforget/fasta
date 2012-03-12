@@ -53,7 +53,7 @@ def load(f):
             if seq != '':
                 seqs.append(Fasta(name, desc, seq))
 
-            seq = r""""""
+            seq = r''
             m = r.match(line)
             name = m.group("name")
             desc = m.group("desc")
@@ -77,7 +77,7 @@ def iter(f):
             if seq != '':
                 yield Fasta(name, desc, seq)
                 
-            seq = r""""""
+            seq = r''
             m = r.match(line)
             name = m.group("name")
             desc = m.group("desc")
@@ -91,8 +91,4 @@ if __name__ == '__main__':
     import sys
     for f in iter(sys.stdin):
         print f.length
-#for f in iter(sys.stdin):
-    #    if f.length == 478:
-    #        print f
-   # 
 

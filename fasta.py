@@ -48,7 +48,7 @@ def load(f):
         line = f.readline()
         if not line:
             break
-            
+        
     	if line[0] == '>' and (line[1:].find(">") == -1):
             if seq != '':
                 seqs.append(Fasta(name, desc, seq))

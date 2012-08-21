@@ -49,7 +49,7 @@ def load(f):
         if not line:
             break
         
-    	if line[0] == '>' and (line[1:].find(">") == -1):
+        if line[0] == '>' and (line[1:].find(">") == -1):
             if seq != '':
                 seqs.append(Fasta(name, desc, seq))
 
